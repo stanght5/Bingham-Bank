@@ -7,14 +7,14 @@ class Account:
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            print("Deposited " + str(amount) + "." + " New balance is " + str(self.balance))
+            print("Deposited ₦" + str(amount) + "." + " New balance is ₦" + str(self.balance))
         else:
             print("Deposit amount must be positive.")
 
     def withdraw(self, amount):
         if 0 < amount <= self.balance:
             self.balance -= amount
-            print("Withdrew" + str(amount) + "." " New balance is" + str(self.balance))
+            print("Withdrew ₦" + str(amount) + "." + " New balance is ₦" + str(self.balance))
         else:
             print("Invalid withdraw amount.")
 
@@ -24,4 +24,4 @@ class Account:
     def display(self):
         print("Account Number: " + str(self.account_number))
         print("Account Holder: " + str(self.account_holder))
-        print("Balance: " + str(self.balance))
+        print("Balance: ₦" + str(self.balance))
