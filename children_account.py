@@ -9,7 +9,7 @@ class Children_Account(Account):
     def set_interest_rate(self, interest_rate):
         self.__interest_rate = interest_rate / 100
         return self.__interest_rate * 100
-    def withdraw(self):
+    def withdraw(self, amount):
         print("Sorry, you cannot withdraw from a children's account")
     def deposit(self, amount):
         return super().deposit(amount)
